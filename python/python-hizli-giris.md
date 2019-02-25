@@ -1,12 +1,6 @@
----
-description: >-
-  Notebook Hali :
-  https://github.com/enisgetmez/OpenVeri/blob/master/python/python%20giris.ipynb
----
-
 # Python Hızlı Giriş
 
-## Temel Syntax Yapısı
+## Temel Syntax
 
 ```python
 print('Hello World!')
