@@ -15,6 +15,7 @@
 * [Görüntü İşlemleri](opencv/untitled.md)
 * [Core \(Çekirdek\) İşlemleri](opencv/core-cekirdek-islemleri.md)
 * [Makine Öğrenimi](opencv/makine-oegrenimi.md)
+* [Kenar Tespiti](opencv/kenar-tespiti.md)
 
 ## TensorFlow
 
