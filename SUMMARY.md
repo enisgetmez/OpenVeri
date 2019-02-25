@@ -6,13 +6,13 @@
 
 * [Python Hızlı Giriş](python/python-hizli-giris.md)
 
-## OpenCV
-
-* [Untitled](opencv/untitled.md)
-
 ## Numpy
 
 * [Numpy Giriş](numpy/numpy-giris.md)
+
+## OpenCV
+
+* [Untitled](opencv/untitled.md)
 
 ## TensorFlow
 

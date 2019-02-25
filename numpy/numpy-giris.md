@@ -1,12 +1,10 @@
-
-Numpy Giriş
-===
+# Numpy Giriş
 
 ## Diziler
+
 Numpy dizisi, tümü aynı türde olan bir değerler sistemidir ve negatif olmayan tam sayıların bir dizini tarafından dizine eklenir. Boyutların sayısı, dizinin sıralamasıdır; Bir dizinin şekli, her boyut boyunca dizinin boyutunu veren bir tam sayı dizisidir.
 
 İç içe Python listelerinden sayısal dizileri başlatabilir ve köşeli parantez kullanarak elemanlara erişebiliriz:
-
 
 ```python
 import numpy as np
@@ -23,16 +21,16 @@ print(b.shape)                     #  "(2, 3)" yazdırır
 print(b[0, 0], b[0, 1], b[1, 0])   # "1 2 4" yazdırır
 ```
 
-    <class 'numpy.ndarray'>
-    (3,)
-    1 2 3
-    [5 2 3]
-    (2, 3)
-    1 2 4
-    
+```text
+<class 'numpy.ndarray'>
+(3,)
+1 2 3
+[5 2 3]
+(2, 3)
+1 2 4
+```
 
 Numpy ayrıca diziler oluşturmak için birçok işlev sunar:
-
 
 ```python
 a = np.zeros((2, 2))   # Tüm sıfırlardan bir dizi oluşturun
@@ -55,19 +53,19 @@ print(e)                     # Yazdır: "[[0.78444834 0.31119597]
                              #               [0.446503   0.55623441]]"
 ```
 
-    [[0. 0.]
-     [0. 0.]]
-    [[1. 1.]]
-    [[7 7]
-     [7 7]]
-    [[1. 0.]
-     [0. 1.]]
-    [[0.78444834 0.31119597]
-     [0.446503   0.55623441]]
-    
+```text
+[[0. 0.]
+ [0. 0.]]
+[[1. 1.]]
+[[7 7]
+ [7 7]]
+[[1. 0.]
+ [0. 1.]]
+[[0.78444834 0.31119597]
+ [0.446503   0.55623441]]
+```
 
 ## Dizi Oluşturma
-
 
 ```python
 # Aşağıdaki sırada 2. sırayı  (3, 4) şeklinde oluşturun
@@ -89,12 +87,12 @@ b[0, 0] = 77     # b [0, 0], [0, 1] ile aynı veri parçasıdır
 print(a[0, 1])   # yazdır : "77"
 ```
 
-    2
-    77
-    
+```text
+2
+77
+```
 
 ## Dizi Veri Türleri
-
 
 ```python
 x = np.array([1, 2])   # Numpy veri tipini seçsin
@@ -107,13 +105,13 @@ x = np.array([1, 2], dtype=np.int64)   # Belirli bir veri tipini zorla
 print(x.dtype)                         # yazdır "int64"
 ```
 
-    int32
-    float64
-    int64
-    
+```text
+int32
+float64
+int64
+```
 
 ## iŞLEMLER
-
 
 ```python
 x = np.array([[1, 2], [3, 4]], dtype=np.float64)
@@ -158,31 +156,31 @@ print(np.argmax(x, axis=1))
 print(np.argmax(x, axis=0))
 ```
 
-    [[ 6.  8.]
-     [10. 12.]]
-    [[ 6.  8.]
-     [10. 12.]]
-    [[-4. -4.]
-     [-4. -4.]]
-    [[-4. -4.]
-     [-4. -4.]]
-    [[ 5. 12.]
-     [21. 32.]]
-    [[ 5. 12.]
-     [21. 32.]]
-    [[0.2        0.33333333]
-     [0.42857143 0.5       ]]
-    [[0.2        0.33333333]
-     [0.42857143 0.5       ]]
-    [[1.         1.41421356]
-     [1.73205081 2.        ]]
-    3
-    [1 1]
-    [1 1]
-    
+```text
+[[ 6.  8.]
+ [10. 12.]]
+[[ 6.  8.]
+ [10. 12.]]
+[[-4. -4.]
+ [-4. -4.]]
+[[-4. -4.]
+ [-4. -4.]]
+[[ 5. 12.]
+ [21. 32.]]
+[[ 5. 12.]
+ [21. 32.]]
+[[0.2        0.33333333]
+ [0.42857143 0.5       ]]
+[[0.2        0.33333333]
+ [0.42857143 0.5       ]]
+[[1.         1.41421356]
+ [1.73205081 2.        ]]
+3
+[1 1]
+[1 1]
+```
 
 MATLAB'ın aksine, `*` öğesinin matris çarpımı değil, elementwise çarpma olduğunu unutmayın. Bunun yerine, vektörlerin iç ürünlerini hesaplamak, bir vektörü bir matrisle çarpmak ve matrisleri çarpmak için `dot` işlevini kullanırız. `dot`, hem numpy modülündeki bir fonksiyon olarak hem de array nesnelerinin bir örnek metodu olarak kullanılabilir:
-
 
 ```python
 x = np.array([[1, 2], [3, 4]])
@@ -206,18 +204,18 @@ print(x.dot(y))
 print(np.dot(x, y))
 ```
 
-    219
-    219
-    [29 67]
-    [29 67]
-    [[19 22]
-     [43 50]]
-    [[19 22]
-     [43 50]]
-    
+```text
+219
+219
+[29 67]
+[29 67]
+[[19 22]
+ [43 50]]
+[[19 22]
+ [43 50]]
+```
 
 NumPy, dizilerde hesaplamalar yapmak için birçok yararlı işlev sunar; en kullanışlı olanlardan biri toplamıdır:
-
 
 ```python
 x = np.array([[1, 2],[3, 4]])
@@ -227,15 +225,15 @@ print(np.sum(x, axis=0))  # Her sütunun toplamını hesapla; "[4 6]" yazdırıy
 print(np.sum(x, axis=1))  # Her satırın toplamını hesapla; "[3 7]" yazdırıyor
 ```
 
-    10
-    [4 6]
-    [3 7]
-    
+```text
+10
+[4 6]
+[3 7]
+```
 
 ## Yineleme
 
 NumPy dizileri üzerinde yineleme yapmak için, bir listeyi yineleniyormuş gibi yapabilirsiniz
-
 
 ```python
 a = np.array([1, 4, 5, 10, 12, 15], int)
@@ -244,16 +242,16 @@ for number in a:
     print(number)
 ```
 
-    1
-    4
-    5
-    10
-    12
-    15
-    
+```text
+1
+4
+5
+10
+12
+15
+```
 
 ## İlişkisel Operatörler
-
 
 ```python
 # Rasgele tamsayı değerlerine sahip diziler oluşturma
@@ -272,18 +270,19 @@ print(a != b)
 print(np.equal(a, b))
 ```
 
-    a: [1 8 6 9 0]
-    b: [5 2 9 0 6]
-    [False  True False  True False]
-    [ True False  True False  True]
-    [False False False False False]
-    [False  True False  True False]
-    [ True False  True False  True]
-    [ True  True  True  True  True]
-    [False False False False False]
-    
-
+```text
+a: [1 8 6 9 0]
+b: [5 2 9 0 6]
+[False  True False  True False]
+[ True False  True False  True]
+[False False False False False]
+[False  True False  True False]
+[ True False  True False  True]
+[ True  True  True  True  True]
+[False False False False False]
+```
 
 ```python
 
 ```
+
