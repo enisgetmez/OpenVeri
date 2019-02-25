@@ -13,6 +13,7 @@
 ## OpenCV
 
 * [Görüntü İşlemleri](opencv/untitled.md)
+* [Core \(Çekirdek\) İşlemleri](opencv/core-cekirdek-islemleri.md)
 
 ## TensorFlow
 
