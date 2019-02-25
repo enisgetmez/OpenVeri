@@ -1,0 +1,2 @@
+# Python Hızlı Giriş
+
