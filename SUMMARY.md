@@ -12,7 +12,7 @@
 
 ## Numpy
 
-* [Untitled](numpy/untitled.md)
+* [Numpy Giriş](numpy/numpy-giris.md)
 
 ## TensorFlow
 
