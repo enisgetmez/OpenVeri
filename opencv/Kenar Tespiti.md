@@ -142,7 +142,7 @@ plt.imshow(canny3, cmap='gray');
 ```
 
 
-![png](output_8_0.png)
+![png](test.png)
 
 
 ---
