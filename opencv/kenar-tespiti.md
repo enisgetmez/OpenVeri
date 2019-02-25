@@ -2,7 +2,7 @@
 
 ## Kenarları Algılama
 
-Bu derste, Sobel operatörü \(`cv2.Sobel()`\) ve Canny edge detektörü \(`cv2.Canny()`\) kullanarak kenarları bulacağız.
+Bu derste, Sobel operatörü \(`cv2.Sobel()`\) ve Canny kenar tespiti \(`cv2.Canny()`\) kullanarak kenarları bulacağız.
 
 ```python
 import numpy as np
@@ -22,15 +22,12 @@ plt.imshow(input_image, cmap='gray')  # Grafiğin gri tonlamalı olarak çizildi
 ```text
 dtype: uint8
 shape: (298, 56)
-
-
-
-
-
 <matplotlib.image.AxesImage at 0x1fa806a3160>
 ```
 
-![png](output_2_2.png)
+![&#xC7;&#x131;kt&#x131;](https://github.com/enisgetmez/OpenVeri/raw/master/opencv/output_2_2.png)
+
+
 
 ### 1. Sobel operatörü ile kenar tespiti
 
@@ -52,7 +49,9 @@ sobelx = cv2.Sobel(input_image, ddepth, dx, dy)
 plt.imshow(sobelx, cmap='gray')
 ```
 
-![png](output_4_1.png)
+![&#xC7;&#x131;kt&#x131;](https://github.com/enisgetmez/OpenVeri/raw/master/opencv/output_4_1.png)
+
+
 
 ```python
 # sobel işlemleri ve büyüklükleri
@@ -71,7 +70,9 @@ plt.subplot(2, 2, 4); plt.title('Sobel yoğunluğu'); plt.axis('off');
 plt.imshow(sobel, cmap='gray');
 ```
 
-![png](output_5_0.png)
+![&#xE7;&#x131;kt&#x131;](https://github.com/enisgetmez/OpenVeri/raw/master/opencv/output_5_0.png)
+
+
 
 ### 2. Canny Kenar Tespiti
 
@@ -91,7 +92,9 @@ canny = cv2.Canny(input_image, threshold1, threshold2)
 plt.imshow(canny, cmap='gray')
 ```
 
-![png](output_7_1.png)
+![&#xE7;&#x131;kt&#x131;](https://github.com/enisgetmez/OpenVeri/raw/master/opencv/output_7_1.png)
+
+
 
 ```python
 # Çeşitli eşikler ile kenar tespitleri
@@ -108,7 +111,7 @@ plt.subplot(1, 3, 3); plt.title('Canny 150/250'); plt.axis('off');
 plt.imshow(canny3, cmap='gray');
 ```
 
-![png](output_8_0.png)
+![&#xE7;&#x131;kt&#x131;](https://github.com/enisgetmez/OpenVeri/raw/master/opencv/test.png)
 
 ### Uygulama: Kenar Tespiti
 
@@ -136,5 +139,7 @@ plt.imshow(output, cmap='gray');  # DUMMY
 # ========================================
 ```
 
-![png](output_10_0.png)
+![](https://github.com/enisgetmez/OpenVeri/raw/master/opencv/output_10_0.png)
+
+
 
