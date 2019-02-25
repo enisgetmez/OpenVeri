@@ -12,7 +12,7 @@
 
 ## OpenCV
 
-* [Untitled](opencv/untitled.md)
+* [Görüntü İşlemleri](opencv/untitled.md)
 
 ## TensorFlow
 
